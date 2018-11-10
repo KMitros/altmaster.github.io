@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Доставка и оплата</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:image" content="path/to/image.jpg">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css">
+
+</head>
+<body>
+<form id="sent-form" action="">
+    <div class="modal-box bg-wrapper">
+        <div class="head">Оформление заказа</div>
+        <div class="modal-form-wrap">
+            <div class="cont-form left">
+                <form class="modal-form" action="">
+                    <label for="name">Имя <sup>*</sup></label>
+                    <input class="modal-input input-1" type="text" id="name" required>
+                    <label for="phone">Телефон <sup>*</sup></label>
+                    <input class="modal-input input-2" type="text" id="phone" required>
+                    <label for="email">E-mail</label>
+                    <input class="modal-input input-2" type="text" id="email">
+                    <label for="adress">Адрес доставки</label>
+                    <textarea class="modal-input input-3" name="message" id="adress" cols="20" rows="5">
+                        </textarea>
+                    <label for="message">Ваше сообщение</label>
+                    <textarea class="modal-input input-3" name="message" id="message" cols="20" rows="5">
+                        </textarea>
+                </form>
+            </div>
+
+            <div class="cont-form right">
+                <img src="../img/image/bttom-slide-small.jpg" alt="" class="form-img">
+                <h3 class="title-companent _accent" >Спальня Карина Моргано</h3>
+                <p>Материал изготовления: <span class="_lighter">Массив дуба и очень длинное название</span></p>
+                <p>Крашение: <span class="_lighter">Золото с патинированием и очень длинное название</span></p>
+                <div class="sum">
+                    <p class="switch-p">Количество</p>
+                    <div class="switcher">
+                        <button class="minus-but">-</button>
+                        <span class="count">0</span>
+                        <button class="plus-but">+</button>
+                    </div>
+                </div>
+                <p class="_bolder">Общая сумма заказа: <span class="_accent"><span class="tottal-price">10</span> рублей</span></p>
+                <input class="modal-input input-4" type="submit" value="Отправить заявку">
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

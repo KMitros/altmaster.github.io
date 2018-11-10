@@ -1,0 +1,53 @@
+.button-large {
+  & {
+    font-family: $button__font-family;
+    font-weight: $button__font-weight;
+    background: $color-primary;
+    border: none;
+    color: $button__color;
+    transition: color .2s ease, bacground .3s ease;
+    padding: 5px 15px;
+    min-width: 260px;
+
+  }
+
+  &:hover {
+    background: #561c23;
+    color: $button-hover__color;
+  }
+}
+
+.pusher {
+  margin-right: 25px;
+}
+
+.button-medium {
+  & {
+    font-family: $button__font-family;
+    font-weight: $button__font-weight;
+    background: $button__backround;
+    border: none;
+    color: $button__color;
+    transition: color .2s ease, bacground .3s ease;
+    padding: 5px 15px;
+  }
+
+  &:hover {
+    background: $button-hover__backround;
+    color: $button-hover__color;
+  }
+}
+
+.inverted {
+  & {
+    background: $button-inverted__backround;
+    border: none;
+    color: $button-inverted__color;
+    transition: color .2s ease, bacground .3s ease;
+  }
+
+  &:hover {
+    background: $button-inverted-hover__backround;
+    color: $button-inverted-hover__color;
+  }
+}

@@ -1,0 +1,94 @@
+//
+//            Varibles
+//_____________________________________
+$saleflag-text__color: $color-white;
+$sale-terms__color: $color-white;
+$sale-terms-bg__color: $color-trans-dark;
+$saleflag-text__size: 27px;
+
+.sale-item {
+
+  padding: 0;
+  margin-bottom: 20px;
+  position: relative;
+  //background: url(../../img/image/index-page-head.jpg);
+  //background-size: cover;
+  min-height: 250px;
+
+  .sale-img {
+    max-width: 290px;
+    height: 170px;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  .sale-terms {
+    color: $sale-terms__color;
+    background-color: $sale-terms-bg__color;
+    font-family: $font-roboto;
+    font-weight: $font-weigth__regular;
+    position: absolute;
+    bottom: 0px;
+    line-height: 40px;
+    padding: 0px 11px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  .sale-title {
+    text-align: center;
+  }
+
+  .sale-item{
+    .sale-img {
+      max-width: 535px;
+      height: 270px;
+      margin: 0 auto;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .sale-title {
+    text-align: center;
+  }
+
+  .sale-item {
+    min-height: 350px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sale-item {
+    & {
+      min-height: 450px;
+    }
+
+    .saleflag {
+      top: 10px;
+      right: 10px;
+      transform: scale(.9);
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sale-title {
+    text-align: left;
+  }
+
+  .sale-item {
+    .saleflag {
+      top: 10px;
+      right: 10px;
+      transform: scale(1);
+    }
+  }
+}
+

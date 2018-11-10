@@ -1,0 +1,38 @@
+//
+//            Varibles
+//_____________________________________
+
+.crumb-wrap {
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  &{
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 20px;
+    list-style: circle;
+    color: gray;
+
+  }
+
+  .bread-li {
+    & {
+      display: inline-block;
+
+    }
+    &:not(:first-child) {
+      &:before {
+        content: ' \25CF';
+        color: $color-black;
+        padding-right: 5px;
+      }
+    }
+
+  }
+  
+  .active {
+    color: $color-black;
+  }
+}

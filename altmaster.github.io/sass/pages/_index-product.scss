@@ -1,0 +1,157 @@
+$product-object-img__border-color: $color-1-6;
+
+.index-product {
+  .top-nav {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .back-cont {
+    padding: 10% 1% 0 0;
+    text-align: right;
+  }
+  .img {
+    width: 100%;
+  }
+  .floating-button {
+    float: right;
+    padding: 0 0px 0 0;
+  }
+
+  .discription-text {
+    margin: 30px 0 0px;
+  }
+
+ .card-title {
+    margin-bottom: 0px;
+  }
+
+  .product-object {
+    .img {
+      & {
+        border: 2px solid $product-object-img__border-color;
+        transition: border-color .3s ease;
+      }
+
+      &:hover {
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  .product-img {
+    max-height: 240px;
+    max-width: 580px;
+  }
+
+  .prod-cont {
+    & {
+      min-height: 230px;
+      min-width: 580px;
+      background-color: $color-1-2;
+    }
+    .product-img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .colors {
+    & {
+      margin: 30px;
+    }
+    .color-img {
+      max-width: 95px;
+      max-height: 40px;
+    }
+    h4 {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .index-product {
+    .card-title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    .colors {
+      margin: 0;
+    }
+
+    .product-img {
+      max-width: 460px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-nav {
+    .floating-button {
+      .button-medium {
+        margin-left: 70px;
+      }
+    }
+  }
+  .index-product {
+    .top-nav {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .floating-button {
+      float: right;
+    }
+
+    .button-medium {
+      width: 225px;
+    }
+    .back-cont {
+      text-align: right;
+    }
+
+    .product-discription {
+      & {
+        margin-left: 30px;
+        position: relative;
+      }
+      .button-medium {
+        position: absolute;
+        top: 100px;
+        right: 0;
+      }
+    }
+
+    .product-img {
+      max-height: 240px;
+      max-width: 580px;
+    }
+
+    .colors {
+      margin: 30px;
+    }
+
+    .advs {
+      .adv {
+        & {
+          display: flex;
+          margin-bottom: 10px;
+        }
+
+        .adv-img {
+          min-width: 40px;
+          max-height: 40px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-weight: 300;
+        }
+
+      }
+    }
+
+  }
+}
+

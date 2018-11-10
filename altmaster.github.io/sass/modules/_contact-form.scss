@@ -1,0 +1,116 @@
+//
+//            Varibles
+//_____________________________________
+$contact-form__background-color: $color-1-6;
+$contact-form__color: $color-1-7;
+
+.contact-form {
+  & {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $contact-form__background-color;
+    border-radius: 15px;
+    padding: 30px 25px 30px;
+    color: black;
+  }
+
+  .input-wrap {
+    .input {
+      & {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      input {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+
+    .captcha-wrap {
+      & {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+      .captcha-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .captcha-title {
+        & {
+          display: flex;
+          flex-direction: column;
+        }
+        > .img {
+          width: 220px;
+        }
+      }
+    }
+  }
+
+  .button-medium {
+    & {
+      width: 100%;
+    }
+
+    &:hover{
+      background-color: $color-primary!important;
+    }
+  }
+
+  .message {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .contact-form {
+    & {
+      font-size: 18px;
+      //padding: 30px 25px 30px;
+    }
+
+    .input-wrap {
+      .input {
+        & {
+          max-width: 275px;
+          margin-top: 20px;
+          margin-bottom: 25px;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+
+    .button-medium {
+      width: 30%;
+    }
+
+    .captcha-wrap {
+      input {
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .captcha-title {
+        > .img {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

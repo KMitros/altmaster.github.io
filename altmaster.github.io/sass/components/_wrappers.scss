@@ -1,0 +1,32 @@
+//
+//            Varibles
+//_____________________________________
+$index-wrapper__background: $color-white;
+
+.body-flex-wrapper {
+  & {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .foot-push {
+    & {
+      flex: 1;
+    }
+
+
+  }
+
+}
+
+.bg-wrapper {
+  background: $index-wrapper__background url(.././img/svg_icon/body_bg.svg) center repeat;
+  background-size: 100px;
+}
+
+.inside-margin {
+  margin: 80px 0 50px 0;
+
+}

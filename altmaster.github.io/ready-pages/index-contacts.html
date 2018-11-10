@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>sales listing</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:image" content="path/to/image.jpg">
+
+    <!-- <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/swiper/dist/css/swiper.css">
+
+</head>
+<body class="bg-wrapper">
+<div style="height: 0; width: 0; position: absolute; visible:hidden">
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="arrow left" viewBox="0 0 24.1 44.9">
+            <style>.st0 {
+                fill: #882730
+            }</style>
+            <path class="st0"
+                  d="M21.4 44.4c.3.3.7.5 1.1.5.4 0 .8-.2 1.1-.5.6-.6.6-1.6 0-2.2L3.9 22.4 23.6 2.7c.6-.6.6-1.6 0-2.2-.6-.6-1.6-.6-2.2 0L.5 21.3c-.6.6-.6 1.6 0 2.2l20.9 20.9zm0 0"/>
+        </symbol>
+        <symbol id="arrow right" viewBox="0 0 24.1 44.9">
+            <style>.st0 {
+                fill: #882730
+            }</style>
+            <path class="st0"
+                  d="M23.6 23.6c.6-.6.6-1.6 0-2.2L2.7.5C2.1-.1 1.1-.1.5.5c-.6.6-.6 1.6 0 2.2l19.7 19.7L.5 42.2c-.6.6-.6 1.6 0 2.2.3.3.7.5 1.1.5.4 0 .8-.2 1.1-.5l20.9-20.8zM2.7 44.4"/>
+        </symbol>
+        <symbol id="down-arrow" viewBox="0 0 314.5 314.5">
+            <path d="M314.5 90.5c0 6-2 13-7 18l-133 133c-5 5-10 7-17 7s-12-2-17-7l-133-133c-10-10-10-25 0-35s24-10 34 0l116 116 116-116c10-10 24-10 34 0 5 5 7 11 7 17z"
+                  />
+        </symbol>
+        <symbol id="menu" viewBox="0 0 75 75">
+            <path d="M57.5 21h-38a2 2 0 0 0 0 4h38a2 2 0 0 0 0-4zM57.5 36h-38a2 2 0 0 0 0 4h38a2 2 0 0 0 0-4zM57.5 51h-38a2 2 0 0 0 0 4h38a2 2 0 0 0 0-4z"/>
+            <path d="M75 14c0-5.523-4.478-10-10-10H10C4.477 4 0 8.477 0 14v47c0 5.522 4.477 10 10 10h55c5.522 0 10-4.478 10-10V14zm-4 47a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V14a6 6 0 0 1 6-6h55a6 6 0 0 1 6 6v47z"/>
+        </symbol>
+        <symbol id="&#x438;&#x43A;&#x43E;&#x43D;&#x43A;&#x430; 24-7" viewBox="0 0 276 276">
+            <style>.st0 {
+                fill: #634e42
+            }
+
+            .st1 {
+                font-family: 'TrebuchetMS'
+            }
+
+            .st2 {
+                font-size: 72.0809px
+            }</style>
+            <path class="st0"
+                  d="M138 276C61.9 276 0 214.1 0 138S61.9 0 138 0s138 61.9 138 138-61.9 138-138 138zm0-270C65.2 6 6 65.2 6 138s59.2 132 132 132 132-59.2 132-132S210.8 6 138 6z"/>
+            <path class="st0"
+                  d="M247.2 155.7c-2.5-.5-4.9 1.1-5.3 3.5-9.8 48.6-53 83.9-102.7 83.9-57.8 0-104.8-47-104.8-104.8s47-104.8 104.8-104.8c27.3 0 53.4 10.7 72.9 29.5h-11.7c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5H223c2.5 0 4.5-2 4.5-4.5V44.8c0-2.5-2-4.5-4.5-4.5s-4.5 2-4.5 4.5v11.9c-21.2-20.6-49.7-32.3-79.4-32.3-30.4 0-59 11.8-80.5 33.4-21.6 21.5-33.4 50.1-33.4 80.6s11.8 59 33.4 80.5c21.5 21.5 50.1 33.4 80.5 33.4 26.4 0 52.2-9.3 72.6-26.1 20.1-16.6 34-39.7 39.1-65.1.4-2.5-1.2-4.9-3.6-5.4z"/>
+            <path class="st0"
+                  d="M250.9 133.8c-2.5 0-4.5 2-4.5 4.5v3c-.1 2.5 1.9 4.6 4.4 4.7h.1c2.4 0 4.5-1.9 4.5-4.4v-3.3c0-2.5-2-4.5-4.5-4.5z"/>
+            <text transform="translate(59.964 161.936)" class="st0 st1 st2">24/7</text>
+        </symbol>
+        <symbol id="&#x438;&#x43A;&#x43E;&#x43D;&#x43A;&#x430; &#x434;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43A;&#x430;"
+                viewBox="0 0 276 276">
+            <style>.st0 {
+                fill: #634e42
+            }</style>
+            <path class="st0"
+                  d="M138 276C61.9 276 0 214.1 0 138S61.9 0 138 0s138 61.9 138 138-61.9 138-138 138zm0-270C65.2 6 6 65.2 6 138s59.2 132 132 132 132-59.2 132-132S210.8 6 138 6z"/>
+            <path class="st0"
+                  d="M200 163.3c-4.8 0-9.3 1.9-12.7 5.2-3.4 3.4-5.3 7.9-5.3 12.6 0 4.8 1.9 9.2 5.3 12.6 3.5 3.4 7.9 5.2 12.7 5.2 9.8 0 17.7-8 17.7-17.9 0-9.7-7.9-17.7-17.7-17.7zm0 27.8c-5.5 0-10.1-4.5-10.1-9.9s4.6-9.9 10.1-9.9c5.4 0 9.8 4.5 9.8 9.9s-4.4 9.9-9.8 9.9zm0 0M204.6 103.7c-.7-.7-1.7-1-2.7-1h-20.4c-2.2 0-4 1.8-4 4v32.6c0 2.2 1.8 4 4 4h32.4c2.2 0 4-1.8 4-4v-21.8c0-1.1-.5-2.2-1.3-2.9l-12-10.9zm5.3 31.5h-24.4v-24.7h14.9l9.5 8.6v16.1zm0 0M102.9 163.3c-4.8 0-9.3 1.9-12.7 5.2-3.4 3.4-5.3 7.9-5.3 12.6 0 4.8 1.9 9.2 5.3 12.6 3.5 3.4 7.9 5.2 12.7 5.2 9.8 0 17.7-8 17.7-17.9.1-9.7-7.9-17.7-17.7-17.7zm0 27.8c-5.5 0-10.1-4.5-10.1-9.9s4.6-9.9 10.1-9.9c5.4 0 9.8 4.5 9.8 9.9s-4.4 9.9-9.8 9.9zm0 0M76.4 168.1h-8v-10.6c0-2.2-1.8-4-4-4s-4 1.8-4 4V172c0 2.2 1.8 4 4 4h12c2.2 0 4-1.8 4-4 0-2.1-1.8-3.9-4-3.9zm0 0M96.6 146.5c0-2.2-1.8-4-4-4H44.4c-2.2 0-4 1.8-4 4s1.8 4 4 4h48.2c2.2 0 4-1.8 4-4zm0 0M52.5 132.1l48.2.3c2.2 0 4-1.8 4-3.9 0-2.2-1.7-4-3.9-4l-48.2-.3c-2.2 0-4 1.7-4 3.9-.1 2.3 1.7 4 3.9 4zm0 0M60.6 114.1h48.2c2.2 0 4-1.8 4-4s-1.8-4-4-4H60.6c-2.2 0-4 1.8-4 4s1.8 4 4 4zm0 0"/>
+            <path class="st0"
+                  d="M234.1 108.7l-28.5-23.6c-.7-.6-1.6-.9-2.5-.9h-33.5V69.9c0-2.2-1.8-4-4-4H64.5c-2.2 0-4 1.8-4 4V99c0 2.2 1.8 4 4 4s4-1.8 4-4V73.9h93.3v94.2h-32.6c-2.2 0-4 1.8-4 4s1.8 4 4 4h48.5c2.2 0 4-1.8 4-4s-1.8-4-4-4h-8V92.2h32l25.9 21.5-.3 54.4h-4.1c-2.2 0-4 1.8-4 4s1.8 4 4 4h8.1c2.2 0 4-1.7 4-3.9l.3-60.3c-.1-1.3-.6-2.4-1.5-3.2zm0 0"/>
+        </symbol>
+        <symbol id="&#x438;&#x43A;&#x43E;&#x43D;&#x43A;&#x430; &#x43E;&#x43F;&#x43B;&#x430;&#x442;&#x430; &#x43A;&#x430;&#x440;&#x442;&#x43E;&#x439;"
+                viewBox="0 0 276 276">
+            <style>.st0 {
+                fill: #634e42
+            }</style>
+            <path class="st0"
+                  d="M138 276C61.9 276 0 214.1 0 138S61.9 0 138 0s138 61.9 138 138-61.9 138-138 138zm0-270C65.2 6 6 65.2 6 138s59.2 132 132 132 132-59.2 132-132S210.8 6 138 6z"/>
+            <path class="st0"
+                  d="M180.7 154.2V80.9c0-5-4.1-9.2-9.2-9.2h-122c-5 0-9.2 4.1-9.2 9.2v73.2c0 5 4.1 9.2 9.2 9.2h122c5.1 0 9.2-4.1 9.2-9.1zm-134.2 0V80.9c0-1.7 1.4-3 3-3h122c1.7 0 3.1 1.4 3.1 3v73.2c0 1.7-1.4 3-3.1 3h-122c-1.6.1-3-1.3-3-2.9zm0 0"/>
+            <path class="st0"
+                  d="M226.5 114.5h-36.6c-1.7 0-3.1 1.4-3.1 3 0 1.7 1.4 3 3.1 3h36.6c1.7 0 3.1 1.4 3.1 3.1v15.3h-39.7c-1.7 0-3.1 1.4-3.1 3 0 1.7 1.4 3.1 3.1 3.1h39.7v51.9c0 1.7-1.4 3.1-3.1 3.1h-122c-1.7 0-3-1.4-3-3.1v-24.4c0-1.7-1.4-3-3-3-1.7 0-3.1 1.4-3.1 3v24.4c0 5 4.1 9.2 9.2 9.2h122c5 0 9.2-4.1 9.2-9.2v-73.2c-.2-5.1-4.3-9.2-9.3-9.2zm0 0M104.4 135.9H89.2c-1.7 0-3 1.4-3 3.1s1.4 3 3 3h15.3c1.7 0 3.1-1.4 3.1-3s-1.5-3.1-3.2-3.1zm0 0M77 135.9H61.7c-1.7 0-3.1 1.4-3.1 3.1s1.4 3 3.1 3H77c1.7 0 3-1.4 3-3s-1.3-3.1-3-3.1zm0 0"/>
+            <path class="st0"
+                  d="M159.4 135.9h-15.3c-1.7 0-3.1 1.4-3.1 3.1s1.4 3 3.1 3h15.3c1.7 0 3-1.4 3-3s-1.4-3.1-3-3.1zm0 0M131.9 135.9h-15.3c-1.7 0-3 1.4-3 3.1s1.4 3 3 3h15.3c1.7 0 3-1.4 3-3s-1.3-3.1-3-3.1zm0 0M73.9 87h-9.2c-5 0-9.2 4.1-9.2 9.2v3.1c0 5 4.1 9.2 9.2 9.2h9.2c5 0 9.2-4.1 9.2-9.2v-3.1c0-5-4.1-9.2-9.2-9.2zM77 99.3c0 1.7-1.4 3-3.1 3h-9.2c-1.7 0-3-1.4-3-3v-3.1c0-1.7 1.4-3 3-3h9.2c1.7 0 3.1 1.4 3.1 3v3.1zm0 0M153.3 87c-3.6 0-6.9 1.6-9.2 4.1-2.2-2.5-5.5-4.1-9.2-4.1-6.7 0-12.2 5.5-12.2 12.2 0 6.7 5.5 12.2 12.2 12.2 3.6 0 6.9-1.6 9.2-4.1 2.2 2.5 5.5 4.1 9.2 4.1 6.7 0 12.2-5.5 12.2-12.2 0-6.7-5.5-12.2-12.2-12.2zm-18.4 18.4c-3.4 0-6.1-2.7-6.1-6.1 0-3.4 2.7-6.1 6.1-6.1 3.4 0 6.1 2.7 6.1 6.1 0 3.3-2.7 6.1-6.1 6.1zm18.4 0c-3.4 0-6.1-2.7-6.1-6.1 0-3.4 2.7-6.1 6.1-6.1 3.4 0 6.1 2.7 6.1 6.1 0 3.3-2.8 6.1-6.1 6.1zm0 0M189.9 132.8h33.6c1.7 0 3-1.4 3-3 0-1.7-1.4-3.1-3-3.1h-33.6c-1.7 0-3.1 1.4-3.1 3.1 0 1.6 1.4 3 3.1 3zm0 0M214.3 169.4h-58c-1.7 0-3 1.4-3 3 0 1.7 1.4 3.1 3 3.1h58c1.7 0 3-1.4 3-3.1 0-1.6-1.4-3-3-3zm0 0M214.3 181.6h-36.6c-1.7 0-3 1.4-3 3.1 0 1.7 1.4 3 3 3h36.6c1.7 0 3-1.4 3-3 0-1.7-1.4-3.1-3-3.1zm0 0"/>
+        </symbol>
+    </svg>
+</div>
+<div class="body-flex-wrapper">
+        <header class="main-head fixed-top">
+        <nav class="navbar">
+            <div class="container">
+                <ul class="header-mnu">
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="index.html">Главная</a></li>
+                    <li class="main-mnu-li js-dropdown">
+                        <a class="main-mnu-a" href="index-product.html">
+                            Спальни
+                            <span class="icon hidden-xs">
+                                    <svg class="icon dropd">
+                                        <use xlink:href="#down-arrow"></use>
+                                    </svg>
+                                </span>
+                        </a>
+                        <ul class="drop-item">
+                            <li>
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-2
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-3
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-4
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-5 Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-6
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-7
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-8
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-9
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-10
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-11
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Пункт-12
+                                <ul class="underdrop">
+                                    <li>подпункт</li>
+                                    <li>подпункт</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-mnu-li js-dropdown">
+                        <a class="main-mnu-a" href="index-product-1.html">
+                            Прихожие
+                            <span class="icon hidden-xs">
+                            <svg class="icon dropd">
+                                <use xlink:href="#down-arrow"></use>
+                            </svg>
+                        </span>
+                        </a>
+                        <ul class="drop-item">
+                            <li>
+                                Пункт-1
+                            </li>
+                            <li>
+                                Пункт-2
+                            </li>
+                            <li>
+                                Пункт-3
+                            </li>
+                            <li>
+                                Пункт-4
+                            </li>
+                            <li>
+                                Пункт-5
+                            </li>
+                            <li>
+                                Пункт-6
+                            </li>
+                            <li>
+                                Пункт-7
+                            </li>
+                            <li>
+                                Пункт-8
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="#">Где посмотреть</a></li>
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="index-delivery.html">Доставка и оплата</a></li>
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="#">Дилерам</a></li>
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="index-contacts.html">Контакты</a></li>
+                    <li class="main-mnu-li"><a class="main-mnu-a" href="index-sales-listing.html">Акции</a></li>
+                </ul>
+                <div class="contacts-wrap">
+                    <a class="popup-with-contact" href="#contact-form">
+                        <div class="phone-wrap"><span class="phone">+ 7 925 437-20-55</span></div>
+                        <div class="callback-wrap"><span class="callback">Заказать обратный звонок</span></div>
+                    </a>
+                    <button class="menu-toogle">
+                        <svg class="icon toogle">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </header>
+    <main class="index-index foot-push inside-margin">
+        <div class="container">
+            <div class="crumb-wrap">
+                <ul class="breadcrumbs">
+                    <li class="bread-li"><a href="#">Главная</a></li>
+                    <li class="bread-li active"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="info-wrap">
+                <div class="text-section">
+                    <h2 class="title-companent section-title _accent main">Контакты</h2>
+                    <h3 class="off-cont">ОФИЦИАЛЬНОЕ ПРЕДСТАВИТЕЛЬСТВО</h3>
+                    <h3 class="off-cont">Калинанградской мебельной фабрики "АЛЬТМАСТЕР" </h3>
+                    <h4 class="adress-title _bolder">Адрес нашего шоурума:</h4>
+                    <p class="adress-inner">г. Москва, Дмитровское шоссе, дом 118 корпус 1 ТЦ "Мебель-Сити" 1 этаж"</p>
+                    <h4 class="adress-title _bolder">Адрес:</h4>
+                    <p class="adress-inner">140152, Московская область, Раменский район, д.Юрово, ж/д станция Бронницы,
+                        перекрёсток улиц Заводская и Мира, склад № 1</p>
+                    <hr class="divide">
+                    <h4 class="adress-title _bolder">Телефон офиса:</h4>
+                    <p class="adress-inner">+7 (495) 107-01-75</p>
+                    <h4 class="adress-title _bolder">Телефон службы сервиса:</h4>
+                    <p class="adress-inner">+7 (910) 444-38-54 <br>+7 925 437-20-55 </p>
+                    <hr class="divide">
+                    <p class="adress-inner"><span class="_bolder">Эл-почта</span> +7 925 437-20-55 </p>
+                    <p class="adress-inner"><span class="_bolder">Часы работы интернет магазина и службы сервиса:</span>
+                        +7 925 437-20-55 </p>
+                    <p class="adress-inner"><span class="_bolder">Часы работы склада (для самовывоза и оптовых покупателей):</span>
+                        +7 925 437-20-55 </p>
+                    <hr class="divide">
+                    <h4 class="adress-title _bolder">Реквизиты:</h4>
+                    <p class="adress-inner">ОГРНИП 308391430500010
+                        <br>Р/С 40802810740000002728
+                        <br>К/С 30101810400000000225
+                        <br>БАНК ОАО «СБЕРБАНК РОССИИ»
+                        <br>БИК 044525225<br>
+                    </p>
+                </div>
+            </div>
+            <h2 class="title-companent _accent _centered">Закажите обратный звонок</h2>
+            <div class="row">
+                <div class="cont-wrap col-md-12">
+                    <div class="cont-form">
+                        <input class="cont-input input-1" type="text" placeholder="Ваше имя">
+                        <input class="cont-input input-2" type="text" placeholder="Ваш телефон">
+                        <textarea class="cont-input input-3" name="message" id="" cols="30" rows="5"
+                                  placeholder="Ваше сообщение"></textarea>
+                        <input class="cont-input input-4" type="submit">
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2865c5be8db4b451c482070fdfecbf49fe29f71cac6b79cc6e4dcf8d789fdfd7&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </main>
+    <footer class="main-foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-sm-push-9 col-md-3 col-md-push-9">
+                    <div class="foot-logo">
+                        <img class="logo-img" src="img/image/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-pull-3 col-md-3 col-md-pull-3">
+                    <div class="foot-links">
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-pull-3 col-md-3 col-md-pull-3">
+                    <div class="foot-links">
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-pull-3 col-md-3 col-md-pull-3">
+                    <div class="foot-links">
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                        <a class="foot-link" href="">Lorem ipsum dolor sit amet.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <form id="contact-form" class="contact-form mfp-hide white-popup-block">
+        <h3 class="title">Форма обратной связи</h3>
+        <fieldset style="border:0;">
+            <ol class="input-wrap">
+                <li class="input">
+                    <label for="name">Ваше имя<sup>*</sup></label>
+                    <input id="name" name="name" type="text" placeholder="Ваше имя" required="">
+                </li>
+                <li class="input">
+                    <label for="phone">Ваш телефон<sup>*</sup></label>
+                    <input id="phone" name="phone" type="tel" placeholder="Ваш телефон" required="">
+                </li>
+                <li class="input">
+                    <label for="email">Ваш E-mail<sup>*</sup></label>
+                    <input id="email" name="email" type="email" placeholder="Ваш E-mail" required="">
+                </li>
+                <li>
+                    <label for="textarea">Сообщение</label><br>
+                    <textarea id="textarea"
+                              class="message">Сообщение</textarea>
+                </li>
+                <li class="captcha-wrap">
+                    <label for="captcha" class="captcha-text">
+                        <span class="title">Введите слово на картинке<sup>*</sup></span>
+                        <input type="text" id="captcha" class="captcha">
+                    </label>
+                    <label for="captcha" class="captcha-title">Защита от автоматических сообщений<img src="img/image/captcha.jpg" alt="" class="img"></label>
+                </li>
+                <button class="button-medium inverted _upper">отправить</button>
+            </ol>
+        </fieldset>
+    </form>
+</div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+
+<![endif]-->
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

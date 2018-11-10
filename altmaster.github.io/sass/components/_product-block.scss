@@ -1,0 +1,42 @@
+.product-item {
+  & {
+    font-family: $font-opensans;
+    font-weight: $font-weigth__semi-bold;
+    font-size: 20px;
+    padding: 3px 3px 10px 3px;
+    background-color: $color-1-2;
+    transition: box-shadow .3s ease, transform .3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: inset 0px 0px 0px 3.5px $color-primary;
+  }
+
+  > .name {
+    font-size: 16px;
+  }
+
+  > .productimg {
+    > .img {
+      min-width: 320px;
+    }
+  }
+
+  > .priceold {
+    font-weight: $font-weigth__regular;
+  }
+
+  > .buy {
+    font-weight: $font-weigth__light;
+    color: $color-white;
+    border: none;
+    background-color: $color-primary;
+    width: 150px;
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

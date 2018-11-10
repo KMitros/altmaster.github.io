@@ -1,0 +1,356 @@
+//
+//            Varibles
+//_____________________________________
+$index-index__color: $color-black;
+$index-index-content__background: $color-trans-beige;
+$index-wrapper__background: $color-white;
+
+.index-index {
+  & {
+    color: $index-index__color;
+  }
+
+  .info-wrap {
+    max-width: 700px;
+  }
+
+  .map {
+    margin-bottom: 40px;
+  }
+
+  .cont-wrap {
+    & {
+      min-height: 320px;
+      min-width: 300px;
+      background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 17%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%), url(../../img/image/index-page-head.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      margin-bottom: 40px;
+    }
+    .cont-form {
+      & {
+        position: relative;
+      }
+      .cont-input {
+        display: block;
+        position: absolute;
+        min-width: 300px;
+        padding: 5px;
+        font-family: $font-myriad;
+        font-weight: $font-weigth__regular;
+        font-size: 16px;
+        border: 3px solid $color-trans-primary;
+      }
+
+      .input-1 {
+        top: 5px;
+        right: 0;
+      }
+
+      .input-2 {
+        top: 55px;
+        right: 0;
+      }
+
+      .input-3 {
+        top: 105px;
+        right: 0;
+      }
+
+      .input-4 {
+        top: 257px;
+        right: 0;
+        text-align: center;
+        font-size: 29px;
+        color: $color-white;
+        background-color: $color-primary;
+        border: none;
+        box-shadow: none;
+      }
+
+    }
+  }
+
+  .head-section {
+    & {
+      position: relative;
+      padding: 120px 0 0 0;
+      min-height: 697px;
+      position: relative;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .background {
+      z-index: -1;
+    }
+
+    .content-wrap {
+      position: absolute;
+      bottom: 0;
+      padding: 20px 10px 20px 10px;
+      width: 100%;
+      text-align: center;
+      background: $index-index-content__background;
+      font-family: $font-trajan;
+    }
+  }
+
+  .slider-top {
+    & {
+      padding-top: 35px;
+    }
+
+    .slidertop-container {
+      & {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        position: relative;
+        right: 20%;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
+  .text-section {
+    & {
+      //padding-top: 30px;
+    }
+
+    .text {
+      margin: 0 auto;
+      font-size: 16px;
+      font-family: $font-myriad;
+      font-weight: $font-weigth__regular;
+    }
+
+    .title-companent {
+      margin-bottom: 10px;
+    }
+
+    .off-cont {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .adress-title {
+      font-size: 16px;
+    }
+
+    .adress-inner {
+      font-size: 16px;
+      font-weight: $font-weigth__light;
+      margin:10px 0 20px 0;
+    }
+    
+    .divide {
+      background-color: $color-primary;
+      height: 1px;
+    }
+
+
+  }
+
+  .advantages {
+    & {
+      padding-top: 30px;
+    }
+
+    .title-companent {
+      padding-bottom: 40px;
+    }
+
+    .advantages-block {
+      > .title {
+        padding: 10px 0px;
+      }
+      > .text {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .calback {
+    & {
+      padding: 15px 0 70px 0;
+      background-color: $color-trans-dark;
+    }
+
+    > .title {
+      text-align: center;
+      font-family: $font-family__primary;
+      font-weight: $font-weigth__bold;
+      font-size: 25px;
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+
+    .flex-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > .input {
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 250px;
+      }
+    }
+
+    > .form {
+      & {
+        text-align: center;
+      }
+
+      > .send {
+        background-color: $color-primary;
+        border: none;
+        color: $color-white;
+        width: 250px;
+        padding: 8px 0;
+        font-family: $font-family__primary;
+        font-weight: $font-weigth__light;
+      }
+    }
+  }
+
+  .slider-bottom {
+    & {
+      padding-top: 45px;
+      //padding-bottom: 70px;
+    }
+
+    //.title-companent {
+    //  padding-bottom: 35px;
+    //}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: 60%;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+
+  .media {
+    & {
+      padding-bottom: 60px;
+    }
+
+    .title-companent {
+      padding-bottom: 50px;
+    }
+  }
+
+  .delivery-img-wrap {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .index-index {
+    .head-section {
+      .content-wrap {
+        max-width: 550px;
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px 0 30px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .index-index {
+    .slider-top {
+      .slidertop-container {
+        right: 10%;
+      }
+    }
+    .wrapper-block {
+      margin-right: -285px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .index-index {
+    .head-section {
+      .content-wrap {
+        & {
+          font-size: 29px;
+          max-width: 900px;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          padding: 20px 100px 10px;
+        }
+        .title {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .slider-top {
+      .slidertop-container {
+        right: 6%;
+      }
+    }
+    .wrapper-block {
+      margin-right: -380px;
+    }
+    .calback {
+      > .title {
+        font-size: 35px;
+      }
+
+      .flex-wrapper {
+        & {
+          padding: 0 200px;
+          justify-content: space-around;
+          flex-flow: row;
+          align-items: center;
+        }
+
+        > .input {
+          padding: 10px;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          width: 25.5%;
+        }
+      }
+      > .form {
+        > .send {
+          width: 20%;
+          margin-top: 10px;
+          margin-right: 14px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+

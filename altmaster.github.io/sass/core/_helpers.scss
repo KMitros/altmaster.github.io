@@ -1,0 +1,37 @@
+._accent {
+  color: $color-primary!important;
+}
+
+._upper-case {
+  text-transform: uppercase!important;
+}
+
+._through {
+  text-decoration: line-through!important;
+}
+
+._centered {
+  text-align: center!important;;
+}
+
+._righted {
+  text-align: right!important;;
+}
+
+._bolder {
+  font-weight: $font-weigth__bold!important;
+}
+
+._lighter {
+  font-weight: $font-weigth__light!important;
+}
+
+._upper {
+  text-transform: uppercase!important;
+}
+
+@media only screen and (min-width: 480px) {
+  ._noscroll {
+    overflow: hidden;
+  }
+}

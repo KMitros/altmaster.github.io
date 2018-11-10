@@ -1,0 +1,56 @@
+//
+//            Base lavel
+//_____________________________________
+@import 'var';
+@import 'greed';
+
+//reset css
+@import 'reset';
+
+//
+//            Components
+//_____________________________________
+@import 'components/fixed';
+@import 'components/svg-sprite';
+@import 'components/wrappers';
+@import 'components/advantages-block';
+@import 'components/breadcrumbs';
+@import 'components/titles';
+@import 'components/sale-item';
+@import 'components/product-block';
+@import 'components/saleflag';
+@import 'components/grid-block';
+@import 'components/prewiev-block';
+@import 'components/buttons';
+@import 'components/table-component';
+@import 'components/sort-panel';
+@import 'components/sider-arrows';
+
+//
+//            Modules
+//_____________________________________
+@import 'modules/header';
+@import 'modules/main';
+@import 'modules/footer';
+@import 'modules/swipper';
+@import 'modules/owl-carousel';
+@import 'modules/simplegalery';
+@import 'modules/sent-form';
+//@import 'modules/_modal-box';
+@import 'modules/contact-form';
+@import 'modules/popup-style';
+
+//
+//            Pages
+//_____________________________________
+@import "pages/index-index";
+@import "pages/index-product";
+@import "pages/index-shipping";
+
+//
+//            Core
+//_____________________________________
+@import 'core/helpers';
+
+//ALWAYS END
+

@@ -1,0 +1,204 @@
+//
+//            Varibles
+//_____________________________________
+$sale-name-link__color: $color-1-5;
+
+.grid-item {
+  & {
+    font-family: $font-myriad;
+    font-weight: $font-weigth__semi-bold;
+    font-size: 16px;
+    padding: 3px 3px 10px 3px;
+    background-color: $color-1-2;
+    transition: box-shadow .3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.53);
+  }
+
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 3.5px $color-primary;
+  }
+
+  .name {
+    font-weight: $font-weigth__regular;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .productimg {
+    position: relative;
+    min-height: 150px;
+  }
+
+  .priceold {
+    font-weight: $font-weigth__regular;
+  }
+
+  .avail {
+    font-size: 14px;
+    .thin {
+      font-weight: $font_weigth__light;
+    }
+  }
+
+  .color {
+    font-size: 14px;
+    .thin {
+      font-weight: $font_weigth__light;
+    }
+  }
+
+  .buy {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    font-weight: $font-weigth__light;
+    color: $color-white;
+    border: none;
+    background-color: $color-primary;
+    width: 100%;
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .watch {
+    font-weight: $font-weigth__light;
+    color: $color-white;
+    border: none;
+    background-color: $color-primary-darker;
+    width: 100%;
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.product-grid {
+  .sale-name-link {
+    color: $sale-name-link__color;
+    text-decoration: underline;
+  }
+}
+
+.sale-info {
+  text-align: center;
+}
+
+.buy-wrap {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.watch-wrap {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.small{
+  .name {
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin: 0!important;
+    text-align: center!important;
+  }
+  .sale-info .buy-wrap {
+    margin-right: 0px;
+  }
+}
+
+.slider-bottom {
+  .p-fix {
+    padding: 3px 3px 10px 4px;
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  .sale-info {
+    & {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-item {
+    .name {
+      text-align: left;
+      margin-left: 35px;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .sale-info {
+    & {
+      text-align: center;
+      padding: 10px;
+    }
+    .buy-wrap {
+      margin-right: 20px;
+    }
+    .watch-wrap {
+      margin-left: 20px;
+    }
+  }
+
+  .big {
+    & {
+      min-height: 330px;
+    }
+
+    .productimg {
+      min-height: 300px;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 18px;
+      margin: 10px 0 0 30px;
+    }
+    .sale-info {
+      & {
+        text-align: left;
+        padding: 10px;
+      }
+      .buy-wrap {
+        & {
+          margin: 0 50px 0 20px;
+          width: 40%;
+        }
+        .buy {
+          margin-top: 20px;
+        }
+        .price {
+          font-size: 18px;
+        }
+
+      }
+      .watch-wrap {
+        & {
+          margin-left: 15px;
+          width: 40%;
+        }
+
+        .color {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+

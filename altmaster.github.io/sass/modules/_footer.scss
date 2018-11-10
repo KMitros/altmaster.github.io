@@ -1,0 +1,55 @@
+//
+//            Varibles
+//_____________________________________
+$index-index__color: $color-black;
+$footer__background: $color-trans-choco;
+$footer-links__font-family: $font-roboto;
+
+
+.main-foot {
+  & {
+    background-color: $footer__background;
+    padding-top: 20px;
+    font-weight: 200;
+    font-size: 14px;
+    vertical-align: baseline;
+
+  }
+
+  .foot-links {
+    & {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .foot-link {
+        display: block;
+        margin-bottom: 10px;
+    }
+  }
+  .foot-logo {
+    & {
+      text-align: center;
+    }
+
+    .logo-img {
+      max-height: 200px;
+      max-width: 130px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-foot {
+    & {
+      font-size: 13px;
+    }
+    .foot-logo {
+      .logo-img {
+        max-height: 100px;
+        max-width: 100px;
+      }
+    }
+  }
+
+}

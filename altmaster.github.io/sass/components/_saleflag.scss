@@ -1,0 +1,21 @@
+.saleflag {
+  & {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url(../../img/image/saleflag-bg.png);
+    width: 115px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    transform: scale(.8);
+  }
+
+  .saleflag-text {
+    color: $saleflag-text__color;
+    font-family: $font-roboto;
+    font-weight: $font-weigth__bold;
+    font-size: $saleflag-text__size;
+  }
+
+}

@@ -1,0 +1,284 @@
+body {
+  font-family: $font-family__primary;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: $color-1-1;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+  min-width: 330px;
+
+  color: #fff;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.main-head {
+  & {
+    background-color: $color-trans-dark;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(-380px);
+    transition: transform .5s ease, background-color .2s ease;
+  }
+
+  .contacts-wrap {
+    & {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .callback-wrap {
+      margin: 0px;
+      padding: 0;
+    }
+
+    .callback {
+      font-size: 14px;
+
+    }
+  }
+  .menu-toogle {
+    & {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+    }
+
+    .toogle {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  .header-mnu {
+    & {
+      display: block;
+    }
+
+    .main-mnu-li {
+      display: block;
+      padding: 10px;
+    }
+
+    .main-mnu-a {
+      & {
+        font-size: 13px;
+        text-transform: uppercase;
+        transition: color .2s ease;
+        position: relative;
+      }
+      .icon {
+        & {
+          position: absolute;
+          top: 2px;
+          right: -9px;
+        }
+
+        .dropd {
+          width: 9px;
+          height: 9px;
+        }
+      }
+      &:hover {
+        color: $color-primary;
+
+      }
+    }
+  }
+
+}
+
+.painted {
+  & {
+    background-color: $color-trans-white;
+    color: $color-black;
+  }
+
+  .drop-item {
+    background-color: $color-trans-white;
+  }
+}
+
+.show-menu {
+  transform: translateY(0px);
+}
+
+.drop-item {
+  position: absolute;
+  top: 55px;
+  display: none;
+  max-width: 350px;
+  min-width: 200px;
+  text-align: left;
+  background: $color-trans-dark;
+
+
+  & > li {
+    & {
+      padding: 0 20px 10px;
+      font-weight: $font-weigth__light;
+      cursor: pointer;
+      transition: color .2s ease;
+      font-size: 16px;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+
+    & > .icon {
+      fill: $color-primary;
+    }
+  }
+}
+
+.show {
+  display: block;
+  z-index: 2;
+}
+
+.underdrop {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .show-menu {
+    & {
+      overflow-y: auto;
+      max-height: 100%;
+    }
+
+    .menu-toogle {
+      bottom: 0%;
+      transition: all .3s ease;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-head {
+    transform: translateY(0);
+    .navbar {
+      .header-mnu {
+        & {
+          display: inline-block;
+          width: 60%;
+        }
+
+        .main-mnu-li {
+          display: inline-block;
+        }
+
+        .icon {
+          & {
+            position: absolute;
+            top: 3px;
+            right: -7px;
+          }
+
+          .dropd {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+
+      .menu-toogle {
+        display: none;
+      }
+    }
+
+  }
+  .contacts-wrap {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-head {
+    .navbar {
+      .header-mnu {
+        & {
+          width: 100%;
+        }
+
+        .main-mnu-li {
+          & {
+            padding: 17px 9px;
+          }
+
+          .icon {
+            top: 3px;
+            right: -5px;
+            width: 8px;
+            height: 8px;
+          }
+        }
+
+      }
+
+      .menu-toogle {
+        display: none;
+      }
+    }
+
+  }
+
+  .contacts-wrap {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-head {
+    .navbar {
+      .header-mnu {
+        & {
+          width: 84%;
+          float: left;
+        }
+
+        .main-mnu-li {
+          & {
+            padding: 10px 25px 10px 10px;
+          }
+
+          .icon {
+            top: 2px;
+            right: -8px;
+            width: 9px;
+            height: 9px;
+          }
+
+        }
+      }
+      .menu-toogle {
+        display: none;
+      }
+
+      .contacts-wrap {
+        text-align: left;
+        position: static;
+        font-family: $font-roboto;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+}
+

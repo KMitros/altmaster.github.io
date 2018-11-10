@@ -1,0 +1,51 @@
+//
+//            Varibles
+//_____________________________________
+$advantages-block-icon__width: 200px;
+$advantages-block-icon__height: 200px;
+$advantages-block-icon__width_l: 270px;
+$advantages-block-icon__height_l: 270px;
+$advantages-block-icon__fill: $color-1-4;
+$advantages-block__font-size: 14px;
+$advantages-block__font-size_l: 18px;
+
+.advantages-block {
+  & {
+    text-align: center;
+  }
+
+  .icon-svg {
+    width: $advantages-block-icon__width;
+    height: $advantages-block-icon__height;
+    fill: $advantages-block-icon__fill;
+  }
+
+  > .title {
+    font-size: $advantages-block__font-size;
+  }
+
+  > .text {
+    font-size: $advantages-block__font-size;
+    font-weight: $font-weigth__thin;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .advantages-block {
+    .icon-svg {
+      width: $advantages-block-icon__width_l;
+      height: $advantages-block-icon__height_l;
+    }
+
+    > .title {
+      font-size: $advantages-block__font-size_l;
+    }
+
+    > .text {
+      font-size: $advantages-block__font-size_l;
+      max-width: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+//
+//            Varibles
+//_____________________________________
+$table-component__font-family: $font-family__primary;
+
+.table-component {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: $font-family__primary;
+  font-weight: 400;
+
+  th,td {
+    vertical-align: middle;
+  }
+
+  td {
+    padding: 0 20px;
+
+    &.text-center img {
+      margin: 0 auto;
+    }
+  }
+
+  th {
+    padding: 20px;
+  }
+
+  > thead {
+    background-color: #998d79;
+    color: #fff;
+    text-align: left;
+  }
+
+  > tbody {
+    color: #272726;
+
+    > tr {
+      &:nth-child(odd) {
+        background-color: #fef9f4;
+      }
+
+      &:nth-child(even) {
+        background-color: #f2ece6;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
